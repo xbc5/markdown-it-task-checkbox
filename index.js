@@ -77,10 +77,10 @@ function makeCheckbox(token, id, options, TokenConstructor) {
 	checkbox.attrs = [["type", "checkbox"], ["id", id]];
 	var checked = /^\[[xX]\][ \u00A0]/.test(token.content); // if token.content starts with '[x] ' or '[X] '
 	if (checked === true) {
-	  checkbox.attrs.push(["checked", "true"]);
+	  checkbox.attrs.push(["checked", ""]);
 	}
 	if (options.disabled === true) {
-	  checkbox.attrs.push(["disabled", "true"]);
+	  checkbox.attrs.push(["disabled", ""]);
 	}
 	
 	return checkbox;
